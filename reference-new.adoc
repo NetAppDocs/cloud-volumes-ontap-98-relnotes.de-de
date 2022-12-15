@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.8 enthält mehrere neue Funktionen und Verbesseru
 [role="lead"]
 Cloud Volumes ONTAP 9.8 enthält mehrere neue Funktionen und Verbesserungen.
 
-Zusätzliche Funktionen und Verbesserungen sind auch in den neuesten Versionen von Cloud Manager eingeführt. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise Zu Cloud Manager"^] Entsprechende Details.
+Zusätzliche Funktionen und Erweiterungen sind ebenfalls in den neuesten Versionen von BlueXP verfügbar. Siehe https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise zu BlueXP"^] Entsprechende Details.
 
 
 
@@ -32,15 +32,15 @@ Siehe link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["N
 
 == 9.8 GA (5. Januar 2021)
 
-Das Release von Cloud Volumes ONTAP 9.8 (General Availability, GA) ist jetzt verfügbar. Die GA-Version enthält Bug Fixes. Cloud Manager fordert Sie auf, 9.8 RC1 und 9.7 Systeme auf diese Version zu aktualisieren.
+Das Release von Cloud Volumes ONTAP 9.8 (General Availability, GA) ist jetzt verfügbar. Die GA-Version enthält Bug Fixes. BlueXP fordert Sie auf, die vorhandenen 9.8 RC1- und 9.7-Systeme auf diese Version zu aktualisieren.
 
 
 
-== Änderungen mit Cloud Manager 3.9.2 (4. Januar 2021)
+== Änderungen mit Connector 3.9.2 (4. Januar 2021)
 
-Die Version Cloud Manager 3.9.2 enthält verschiedene Verbesserungen für Cloud Volumes ONTAP, darunter Unterstützung für AWS Outposts, größere Festplatten in Google Cloud und mehr.
+Die Version 3.9.2 des BlueXP Connectors enthält verschiedene Verbesserungen für Cloud Volumes ONTAP, darunter die Unterstützung von AWS Outposts, größere Festplatten in der Google Cloud und mehr.
 
-Wechseln Sie zum https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise Zu Cloud Manager"^] Weitere Informationen zur Version 3.9.2.
+Wechseln Sie zum https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Versionshinweise zu BlueXP"^] Weitere Informationen zur Version 3.9.2.
 
 
 
@@ -60,7 +60,7 @@ Wenn Sie ein Cloud Volumes ONTAP 9.7-System besitzen, das auf einem Instanztyp c
 
 == Update zu 9.8 RC1 (12. November 2020)
 
-Ähnlich wie Systeme mit einzelnen Nodes weist Cloud Manager jetzt bei Verwendung eines Instanztyps C5, M5 oder R5 eine Core-Festplatte zu neuen 9.8 HA-Paar-Implementierungen in AWS zu. Die Kernfestplatte bietet mehr Möglichkeiten, zwischen unterstützten Instanztypen zu wechseln, erweitert die Fähigkeit des Systems, Kerndateien bei Problemen zu sammeln, und unterstützt künftig größere Instanztypen.
+Ähnlich wie bei Systemen mit einzelnen Nodes weist BlueXP nun neuen 9.8 HA-Paar-Implementierungen in AWS eine Core-Festplatte zu, wenn Sie einen Instanztyp C5, M5 oder R5 verwenden. Die Kernfestplatte bietet mehr Möglichkeiten, zwischen unterstützten Instanztypen zu wechseln, erweitert die Fähigkeit des Systems, Kerndateien bei Problemen zu sammeln, und unterstützt künftig größere Instanztypen.
 
 Die Core-Festplatte ist eine General Purpose SSD (gp2) mit 540 gib.
 
@@ -130,7 +130,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 
 === Zentrale Festplatte für Single-Node-Systeme in AWS
 
-Cloud Manager weist bei Verwendung eines Instanztyps C5, M5 oder R5 jetzt einer Core-Festplatte neuen 9.8 Single Node-Implementierungen in AWS zu. Die Kernfestplatte bietet mehr Möglichkeiten, zwischen unterstützten Instanztypen zu wechseln, erweitert die Fähigkeit des Systems, Kerndateien bei Problemen zu sammeln, und unterstützt künftig größere Instanztypen.
+BlueXP weist neuen 9.8 Single Node-Implementierungen in AWS nun eine Core-Festplatte zu, wenn Sie einen Instanztyp C5, M5 oder R5 verwenden. Die Kernfestplatte bietet mehr Möglichkeiten, zwischen unterstützten Instanztypen zu wechseln, erweitert die Fähigkeit des Systems, Kerndateien bei Problemen zu sammeln, und unterstützt künftig größere Instanztypen.
 
 Die Core-Festplatte ist eine General Purpose SSD (gp2) mit 540 gib.
 
@@ -139,18 +139,18 @@ NOTE: Zudem werden jetzt auf Single-Node-Systemen, die diese Instanztypen nutzen
 
 
 
-== Erforderliche Version des Cloud Manager Connectors
+== Erforderliche Version des BlueXP Connectors
 
-Der Cloud Manager Connector muss Version 3.9.0 oder höher ausführen, um neue Cloud Volumes ONTAP 9.8-Systeme bereitzustellen und vorhandene Systeme auf Version 9.8 zu aktualisieren.
+Der BlueXP-Connector muss Version 3.9.0 oder höher ausführen, um neue Cloud Volumes ONTAP 9.8-Systeme bereitzustellen und bestehende Systeme auf Version 9.8 zu aktualisieren.
 
 
 
 == Upgrade-Hinweise
 
-* Upgrades von Cloud Volumes ONTAP müssen von Cloud Manager abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
-* Sie können ein Upgrade von Version 9.7 auf Cloud Volumes ONTAP 9.8 durchführen. Cloud Manager fordert Sie zum Upgrade Ihrer vorhandenen Cloud Volumes ONTAP 9.7 Systeme auf Version 9.8 auf.
+* Upgrades von Cloud Volumes ONTAP müssen von BlueXP abgeschlossen werden. Sie sollten kein Cloud Volumes ONTAP-Upgrade mit System Manager oder der CLI durchführen. Dies kann die Stabilität des Systems beeinträchtigen.
+* Sie können ein Upgrade von Version 9.7 auf Cloud Volumes ONTAP 9.8 durchführen. BlueXP fordert Sie auf, Ihre vorhandenen Cloud Volumes ONTAP 9.7-Systeme auf Version 9.8 zu aktualisieren.
 +
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Informieren Sie sich, wie ein Upgrade durchgeführt wird, wenn Cloud Manager Sie benachrichtigt"^].
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Erfahren Sie, wie Sie aktualisiert werden können, wenn Sie von BlueXP benachrichtigt werden"^].
 
 * Das Upgrade eines einzelnen Node-Systems nimmt das System für bis zu 25 Minuten offline, während dieser I/O-Unterbrechung erfolgt.
 * Das Upgrade eines HA-Paars erfolgt unterbrechungsfrei und die I/O wird unterbrochen. Während dieses unterbrechungsfreien Upgrade-Prozesses wird jeder Node entsprechend aktualisiert, um den I/O-Datenverkehr für die Clients weiterhin bereitzustellen.
