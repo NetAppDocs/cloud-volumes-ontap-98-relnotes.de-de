@@ -41,7 +41,7 @@ Bei einigen Konfigurationen verhindern Festplattenbeschränkungen, dass Sie durc
 | PAYGO Premium | 368 TB 
 
 
-| Node-basierte Lizenz | 368 TB pro Lizenz 
+| Node-basierte Lizenz | 2 PiB (erfordert mehrere Lizenzen) 
 
 
 | Kapazitätsbasierte Lizenz | 2 PiB 
@@ -78,13 +78,13 @@ Die folgende Tabelle zeigt die maximale Systemkapazität mit Festplatten allein,
 
 | Maximale Systemkapazität mit Festplatten und kalten Daten-Tiering zu einem Google Cloud Storage Bucket | Abhängig von der Lizenz. Siehe Tabelle oben. 
 |===
-^1^ Diese Grenze wird durch Virtual Machine-Limits in Google Cloud Platform definiert.
+^1^ Diese Grenze wird durch die Grenzen virtueller Maschinen in Google Cloud definiert.
 
 
 
 == Aggregatgrenzen
 
-Cloud Volumes ONTAP gruppiert Festplatten der Google Cloud Platform in _Aggregate_. Aggregate stellen Storage auf Volumes zur Verfügung.
+Cloud Volumes ONTAP gruppiert Google Cloud Festplatten zu _Aggregaten_. Aggregate stellen Storage auf Volumes zur Verfügung.
 
 [cols="2*"]
 |===
@@ -122,7 +122,9 @@ Hinweise:
 | Logischer Storage | Parameter | Grenze 
 
 
-| *Storage Virtual Machines (SVMs)* | Maximale Anzahl für Cloud Volumes ONTAP (HA-Paar oder Single Node) | Eine Datenservice-SVM und eine Ziel-SVM für die Disaster Recovery verwendet. Sie können die Ziel-SVM für den Datenzugriff aktivieren, wenn ein Ausfall auf der Quell-SVM auftritt. ^1^ die einheitliche SVM für Daten umfasst das gesamte Cloud Volumes ONTAP System (HA-Paar oder ein Node). 
+| *Storage Virtual Machines (SVMs)* | Maximale Anzahl für Cloud Volumes ONTAP (HA-Paar oder Single Node) | Eine Datenservice-SVM und eine Ziel-SVM für die Disaster Recovery verwendet. Sie können die Ziel-SVM für den Datenzugriff aktivieren, wenn ein Ausfall auf der Quell-SVM auftritt. ^1^
+
+Die eine Datenservice-SVM umfasst das gesamte Cloud Volumes ONTAP System (HA-Paar oder ein Node). 
 
 
 .2+| *Dateien* | Maximale Größe | 16 TB 
